@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var task1_1 = require("./task1");
+var task2_1 = require("./task2");
+var task3_1 = require("./task3");
+var task4_1 = require("./task4");
+var task5_1 = require("./task5");
+console.log("Area of rectangle: ".concat((0, task1_1.calculateRectangleArea)(5, 3)));
+console.log("Circle properties for radius 5:", (0, task2_1.calculateCircle)(5));
+console.log("The third angle in the triangle is: ".concat((0, task3_1.findAngleOfTriangle)(80, 65)));
+console.log("Difference in days between the dates: ".concat((0, task4_1.getDiffInDays)(new Date("2021-01-01"), new Date("2021-01-10"))));
+console.log("Initials of the name: ".concat((0, task5_1.getInitials)("Zulfikar Ditya")));
