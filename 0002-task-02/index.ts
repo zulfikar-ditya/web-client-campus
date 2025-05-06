@@ -1,8 +1,8 @@
-import { fahrenheitToCelsius } from "./task1";
-import { centiToKm } from "./task2";
-import { isOdd } from "./task3";
-import { removeFirstOccurrence } from "./task4";
-import { isPalindrome } from "./task5";
+import { fahrenheitToCelsius } from "./temperatureConverter";
+import { centiToKm } from "./distanceConverter";
+import { isOdd } from "./numberUtils";
+import { removeFirstOccurrence } from "./stringManipulator";
+import { isPalindrome } from "./palindromeChecker";
 
 console.log("===================Task 1=================");
 console.log(`Input: 100. Result: ${fahrenheitToCelsius(100)}`);
