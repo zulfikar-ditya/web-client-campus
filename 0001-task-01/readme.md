@@ -1,35 +1,35 @@
 # TypeScript Math Functions Collection
 
-This project contains a collection of TypeScript functions for various mathematical calculations. Each function is separated into its own file for better organization and maintainability.
+This project contains a collection of TypeScript functions for various mathematical calculations. Each function is separated into its own file with descriptive names for better organization and maintainability.
 
 ## Project Structure
 
 - `index.ts` - Main entry point that imports and demonstrates all functions
-- `task1.ts` - Rectangle area calculation
-- `task2.ts` - Circle properties calculations
-- `task3.ts` - Triangle angle calculation
-- `task4.ts` - Date difference calculator
-- `task5.ts` - Name initials generator
+- `rectangleCalculator.ts` - Rectangle area calculation
+- `circleCalculator.ts` - Circle properties calculations
+- `triangleCalculator.ts` - Triangle angle calculation
+- `dateCalculator.ts` - Date difference calculator
+- `stringFormatter.ts` - Name initials generator
 
 ## File Descriptions
 
-### task1.ts
+### rectangleCalculator.ts
 
-Contains `calculateRectangleArea()` function that calculates the area of a rectangle given its width and height.
+Contains `calculateRectangleArea()` function that calculates the area of a rectangle given its length and width.
 
-### task2.ts
+### circleCalculator.ts
 
-Contains `calculateCircle()` function that calculates the area, diameter, and circumference of a circle given its radius. Also defines the `calculateCircleResponse` type used for the return value.
+Contains `calculateCircle()` function that calculates the area and circumference of a circle given its radius.
 
-### task3.ts
+### triangleCalculator.ts
 
 Contains `findAngleOfTriangle()` function that calculates the third angle of a triangle when given the other two angles (based on the fact that angles in a triangle sum to 180 degrees).
 
-### task4.ts
+### dateCalculator.ts
 
 Contains `getDiffInDays()` function that calculates the difference in days between two Date objects.
 
-### task5.ts
+### stringFormatter.ts
 
 Contains `getInitials()` function that extracts the first letter from each word in a name to create initials.
 
@@ -45,19 +45,22 @@ tsc
 node 0001-task-01/index.js
 ```
 
-Alternatively, you can compile and run individual task files:
+Alternatively, you can compile and run individual files:
 
 ```bash
 # Example for compiling and running a specific file
-tsc 0001-task-01/task1.ts
-node 0001-task-01/task1.js
+tsc 0001-task-01/rectangleCalculator.ts
+node 0001-task-01/rectangleCalculator.js
 ```
 
-## Original single-file version
+## Previous Structure
 
-The original version of this code was in a single file. To run that version:
+The project was previously organized with generic file names:
 
-```bash
-tsc 0001-task-01/app.ts
-node 0001-task-01/app.js
-```
+- `task1.ts` - Rectangle calculations
+- `task2.ts` - Circle calculations
+- `task3.ts` - Triangle calculations
+- `task4.ts` - Date calculations
+- `task5.ts` - String formatting
+
+The code has been refactored to use more descriptive file names for improved code readability and maintainability.
